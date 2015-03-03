@@ -1,0 +1,26 @@
+{
+  "name": "object-transpose",
+  "version": "1.0.0",
+  "description": "Transpose between object of arrays and array of objects",
+  "main": "index.js",
+  "scripts": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/emilbayes/object-transpose"
+  },
+  "keywords": [
+    "object",
+    "transpose",
+    "object",
+    "array"
+  ],
+  "author": "Emil Bay <github@tixz.dk>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/emilbayes/object-transpose/issues"
+  },
+  "homepage": "https://github.com/emilbayes/object-transpose",
+  "devDependencies": {
+  }
+}
