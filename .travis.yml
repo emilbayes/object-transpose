@@ -4,4 +4,12 @@ node_js:
 - '0.10'
 - '0.11'
 - '0.12'
-- 'iojs'
+- iojs
+deploy:
+  provider: npm
+  email: github@tixz.dk
+  api_key:
+    secure: UkS0lEbczfGWXSuMoooQHj4S+LzWVicAPSELvePFBQWyM/jQa/Z9G9B0eDFd9fMt+xDp27Uh4ucUZmYxRDmjzhxD/7FG6OHo9JYye6y9ZSoo5gM20uRUf/uIHepV5v2RzpOOSK54IXJEyrB/kiw1K/NyRv8ZW3PsQFEf/1ktnG4=
+  on:
+    tags: true
+    repo: emilbayes/object-transpose
