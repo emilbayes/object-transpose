@@ -10,6 +10,13 @@ Supports objects of sparse arrays and arrays of irregular objects.
 
 See [`test.js`](test.js) for examples.
 
+Installation
+============
+
+```bash
+npm install --save object-transpose
+```
+
 Example
 =======
 
