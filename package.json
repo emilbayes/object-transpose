@@ -4,6 +4,9 @@
   "description": "Transpose between object of arrays and array of objects",
   "main": "index.js",
   "scripts": {
+    "test": "npm run lint && npm run tape",
+    "lint": "eslint --ignore-path .gitignore .",
+    "tape": "tape test.js"
   },
   "repository": {
     "type": "git",
@@ -22,5 +25,7 @@
   },
   "homepage": "https://github.com/emilbayes/object-transpose",
   "devDependencies": {
+    "eslint": "",
+    "tape": "^3.0.3"
   }
 }
