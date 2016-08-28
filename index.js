@@ -27,7 +27,7 @@ function transposeObject(data) {
   for(key in data)
     for (i = 0; i < data[key].length; i++) {
       res[i] = res[i] || {};
-      if(data[key][i]) res[i][key] = data[key][i];
+      if(data[key][i] !== undefined) res[i][key] = data[key][i];
     }
 
   return res;

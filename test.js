@@ -40,3 +40,14 @@ test('T(T(sparseA)) === sparseA', function(t) {
 
   t.deepEqual(T(T(sparseA)), sparseA);
 });
+
+var zeroAndNullEntries = {
+  a: [0, null, 1],
+  b: [2, , 3]
+};
+
+test('T(T(zeroAndNullEntries)) === zeroAndNullEntries', function (t) {
+  t.plan(1);
+
+  t.deepEqual(T(T(zeroAndNullEntries)), zeroAndNullEntries);
+});
