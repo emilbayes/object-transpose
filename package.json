@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "npm run lint && npm run tape",
-    "lint": "eslint --ignore-path .gitignore .",
+    "lint": "standard",
     "tape": "tape test.js"
   },
   "repository": {
@@ -25,7 +25,7 @@
   },
   "homepage": "https://github.com/emilbayes/object-transpose",
   "devDependencies": {
-    "eslint": "",
-    "tape": "^3.0.3"
+    "standard": "^8.0.0",
+    "tape": "^4.6.0"
   }
 }

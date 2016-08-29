@@ -1,4 +1,5 @@
-'use strict';
+'use strict'
+
 /**
 * Transpose an Array of Objects to an Object of Arrays and vice versa
 * Example:
@@ -10,38 +11,35 @@
 * @param  {Array|Object} data
 * @return {Object|Array}
 */
-
-
-
-module.exports = function transpose(data) {
-  if(Array.isArray(data))
-    return transposeArray(data);
-  else
-    return transposeObject(data);
-};
-
-function transposeObject(data) {
-  var res = [];
-  var key, i;
-
-  for(key in data)
-    for (i = 0; i < data[key].length; i++) {
-      res[i] = res[i] || {};
-      if(data[key][i] !== undefined) res[i][key] = data[key][i];
-    }
-
-  return res;
+module.exports = function transpose (data) {
+  if (Array.isArray(data)) return transposeArray(data)
+  else return transposeObject(data)
 }
 
-function transposeArray(data) {
-  var res = {};
-  var i, key;
+function transposeObject (data) {
+  var res = []
+  var key, i
 
-  for(i = 0; i < data.length; i++)
-    for(key in data[i]) {
-      res[key] = res[key] || [];
-      res[key][i] = data[i][key];
+  for (key in data) {
+    for (i = 0; i < data[key].length; i++) {
+      res[i] = res[i] || {}
+      if (data[key][i] !== undefined) res[i][key] = data[key][i]
     }
+  }
 
-  return res;
+  return res
+}
+
+function transposeArray (data) {
+  var res = {}
+  var i, key
+
+  for (i = 0; i < data.length; i++) {
+    for (key in data[i]) {
+      res[key] = res[key] || []
+      res[key][i] = data[i][key]
+    }
+  }
+
+  return res
 }
